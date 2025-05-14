@@ -47,6 +47,37 @@
                 <div class="form-group">
                     <label for="categoria_id">Categoría:</label>
                     <select id="categoria_id" name="categoria_id" required aria-required="true">
+                        <!-- Dentro del formulario de productos -->
+<div class="form-group">
+    <label for="proveedor_id">Proveedor:</label>
+    <select id="proveedor_id" name="proveedor_id" required aria-required="true">
+        <!-- Opciones se cargarán dinámicamente -->
+    </select>
+</div>
+<div class="form-group">
+    <label for="precio_compra">Precio de Compra:</label>
+    <input type="number" id="precio_compra" name="precio_compra" min="0" step="0.01">
+</div>
+<div class="form-group">
+    <label for="stock_actual">Stock Inicial:</label>
+    <input type="number" id="stock_actual" name="stock_actual" min="0" value="0" required aria-required="true">
+</div>
+<div class="form-group">
+    <label for="stock_minimo">Stock Mínimo:</label>
+    <input type="number" id="stock_minimo" name="stock_minimo" min="0" value="5">
+</div>
+<div class="form-group">
+    <label for="codigo_barras">Código de Barras:</label>
+    <input type="text" id="codigo_barras" name="codigo_barras">
+</div>
+<div class="form-group">
+    <label for="estado">Estado:</label>
+    <select id="estado" name="estado" required aria-required="true">
+        <option value="activo" selected>Activo</option>
+        <option value="inactivo">Inactivo</option>
+        <option value="agotado">Agotado</option>
+    </select>
+</div>
                         <!-- Opciones se cargarán dinámicamente -->
                     </select>
                 </div>
@@ -149,6 +180,11 @@
                     <label for="usuario-email">Email:</label>
                     <input type="email" id="usuario-email" required aria-required="true">
                 </div>
+                <div class="form-group">
+                      <label for="usuario-contraseña">Contraseña:</label>
+                     <input type="password" id="usuario-contraseña" required aria-required="true">
+                </div>
+
                 <div class="form-group">
                     <label for="usuario-rol">Rol:</label>
                     <select id="usuario-rol" required aria-required="true">
